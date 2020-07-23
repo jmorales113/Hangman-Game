@@ -6,18 +6,15 @@ const Hangman = function (word, remainingGuesses) {
 } 
 
 Hangman.prototype.calculateStatus = function () {
-
+    let puzzleChar = game1.getPuzzle()
     if (this.remainingGuesses === 0) {
         this.status = "failed"
-    }
-
-    this.word.forEach(letter => {
-        if (this.guessedLetters.includes(letter) && this.guessedLetters === 3) {
-            this.status = "finished"
-
-        }
-    })
+    } else if (!puzzleChar.includes("*") && this.remainingGuesses > 0 || this.remainingGuesses <= 0) {
+        this.status = "finished"
+    } 
 }
+    
+
 
 Hangman.prototype.getPuzzle = function () {
     let puzzle = ""
