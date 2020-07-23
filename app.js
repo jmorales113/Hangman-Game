@@ -12,4 +12,5 @@ window.addEventListener("keypress", function (e) {
     puzzleElement.textContent = game1.getPuzzle()
     guessesElement.textContent = game1.remainingGuesses
     console.log(game1.status)
+    console.log(game1.statusMessage())
 })

@@ -13,8 +13,17 @@ Hangman.prototype.calculateStatus = function () {
         this.status = "finished"
     } 
 }
-    
 
+
+Hangman.prototype.statusMessage = function () {
+    if (this.status === "playing") {
+        return `Guesses left: ${this.remainingGuesses}`
+    } else if (this.status === "failed") {
+        return `Nice try! the word was ${this.word.join("")}.`
+    } else if (this.status === "finished") {
+        return `Great work! You guessed the word!`
+    }
+}
 
 Hangman.prototype.getPuzzle = function () {
     let puzzle = ""
@@ -36,5 +45,6 @@ Hangman.prototype.makeGuess = function (guess) {
         this.remainingGuesses--
     }
     this.calculateStatus()
+    this.statusMessage()
 }
 
