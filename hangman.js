@@ -14,12 +14,11 @@ Hangman.prototype.calculateStatus = function () {
     } 
 }
 
-
 Hangman.prototype.statusMessage = function () {
     if (this.status === "playing") {
         return `Guesses left: ${this.remainingGuesses}`
     } else if (this.status === "failed") {
-        return `Nice try! the word was ${this.word.join("")}.`
+        return `Nice try! the word was "${this.word.join("")}".`
     } else if (this.status === "finished") {
         return `Great work! You guessed the word!`
     }
@@ -38,13 +37,18 @@ Hangman.prototype.getPuzzle = function () {
 Hangman.prototype.makeGuess = function (guess) {
     guess = guess.toLowerCase()
 
+    if (this.status !== "playing") {
+        return
+    }
+
     if (!this.guessedLetters.includes(guess)) {
         this.guessedLetters.push(guess)
     }
+
     if (!this.word.includes(guess)) {
         this.remainingGuesses--
     }
     this.calculateStatus()
-    this.statusMessage()
+    
 }
 
