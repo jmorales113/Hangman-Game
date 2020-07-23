@@ -12,7 +12,7 @@ Hangman.prototype.calculateStatus = function () {
     }
 
     this.word.forEach(letter => {
-        if (this.guessedLetters.includes(letter) && letter === " ") {
+        if (this.guessedLetters.includes(letter) && this.guessedLetters === 3) {
             this.status = "finished"
 
         }
