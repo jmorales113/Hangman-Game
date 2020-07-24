@@ -6,14 +6,14 @@ class Hangman {
         this.status = "playing"
     }
     calculateStatus() {
-        let puzzleChar = game1.getPuzzle()
+        let puzzleChar = game1.puzzle
         if (this.remainingGuesses === 0) {
             this.status = "failed"
         } else if (!puzzleChar.includes("*") && this.remainingGuesses > 0 || this.remainingGuesses <= 0) {
             this.status = "finished"
         } 
     }
-    statusMessage() {
+    get statusMessage() {
         if (this.status === "playing") {
             return `Guesses left: ${this.remainingGuesses}`
         } else if (this.status === "failed") {
@@ -22,7 +22,7 @@ class Hangman {
             return `Great work! You guessed the word!`
         }
     }
-    getPuzzle() {
+    get puzzle() {
         let puzzle = ""
 
         this.word.forEach(letter => {
