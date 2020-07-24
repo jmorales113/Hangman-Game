@@ -1,6 +1,6 @@
 const puzzleElement = document.querySelector("#puzzle")
 const guessesElement = document.querySelector("#guesses")
-const game1 = new Hangman("cat", 2)
+const game1 = new Hangman("car parts", 2)
 
 puzzleElement.textContent = game1.puzzle
 guessesElement.textContent = game1.statusMessage

@@ -2,7 +2,7 @@ class Hangman {
     constructor(word, remainingGuesses) {
         this.word = word.toLowerCase().split("")
         this.remainingGuesses = remainingGuesses
-        this.guessedLetters = []
+        this.guessedLetters = [" "]
         this.status = "playing"
     }
     calculateStatus() {
