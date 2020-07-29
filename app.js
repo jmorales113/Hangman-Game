@@ -18,10 +18,10 @@ getPuzzle("2").then((puzzle) => {
     console.log(`Error: ${error}`)
 })
 
-getCountryName("NI").then((response) => {
-    console.log(`Country name: ${response.name}`)
-}).catch((error) => {
-    console.log(`Error: ${error}`)
-})
+// getCurrentCountry().then((country) => {
+//     console.log(country.name)
+// }).catch((error) => {
+//     console.log(error)
+// })
 
 
