@@ -26,16 +26,4 @@ document.querySelector("#reset").addEventListener("click", () => {
 startGame()
 
 
-// getPuzzle("2").then((puzzle) => {
-//     console.log(puzzle)
-// }).catch((error) => {
-//     console.log(`Error: ${error}`)
-// })
-
-// getCurrentCountry().then((country) => {
-//     console.log(country.name)
-// }).catch((error) => {
-//     console.log(error)
-// })
-
 
