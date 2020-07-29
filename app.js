@@ -14,13 +14,14 @@ window.addEventListener("keypress", (e) => {
 
 getPuzzle("2").then((puzzle) => {
     console.log(puzzle)
-}, (err) => {
-    console.log(`Error: ${err}`)
+}).catch((error) => {
+    console.log(`Error: ${error}`)
 })
 
-getCountryName("NI").then((country) => {
-    console.log(`Country name: ${country}`)
-}, (err) => {
-    console.log(`Error: ${err}`)
+getCountryName("NI").then((response) => {
+    console.log(`Country name: ${response.name}`)
+}).catch((error) => {
+    console.log(`Error: ${error}`)
 })
+
 

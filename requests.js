@@ -1,35 +1,23 @@
-const getPuzzle = (wordCount) => new Promise((resolve, reject) => {
-    const request = new XMLHttpRequest()
-
-    request.addEventListener("readystatechange", (e) => {
-        if (e.target.readyState === 4 && e.target.status === 200) {
-            const data = JSON.parse(e.target.responseText)
-            resolve(data.puzzle)
-        } else if (e.target.readyState === 4) {
-            reject("An error has taken place")
+const getPuzzle = (wordCount) => {
+    return fetch(`http://puzzle.mead.io/puzzle?wordCount=${wordCount}`).then((response) => {
+        if (response.status === 200) {
+            return response.json()
+        } else {
+            throw new Error("Unable to fetch puzzle")
         }
+    }).then((response) => {
+        return response.puzzle
     })
+}
 
-    request.open("GET", `http://puzzle.mead.io/puzzle?wordCount=${wordCount}`)
-    request.send()
-})
-
-const getCountryName = (countryCode) => new Promise((resolve, reject) => {
-    const countryRequest = new XMLHttpRequest()
-
-    countryRequest.addEventListener("readystatechange", (e) => {
-        if (e.target.readyState === 4 && e.target.status === 200) {
-            const data = JSON.parse(e.target.responseText)
-            data.find((country) => {
-                if (country.alpha2Code === countryCode) {
-                    resolve(country.name)
-                }
-            })
-        } else if (e.target.readyState === 4) {
-            reject("An error has taken place")
+const getCountryName = (countryCode) => {
+    return fetch("http://restcountries.eu/rest/v2/").then((response) => {
+        if (response.status === 200) {
+            return response.json()
+        } else {
+            throw new Error("An error has taken place")
         }
+    }).then((response) => {
+        return response.find((country) => country.alpha2Code === countryCode)
     })
-
-    countryRequest.open("GET", `http://restcountries.eu/rest/v2/`)
-    countryRequest.send()
-})
+}
