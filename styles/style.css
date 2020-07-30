@@ -73,4 +73,21 @@ body {
     top: 17%;
 }
 
+@media screen and (max-width: 640px) {
+  #guesses {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 60%;
+  margin-top: -50px;
+  }
+  .button {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 70%;
+  margin-top: -50px;
+  }
+}
+
  
