@@ -5,7 +5,7 @@
 }
 
  html {
-     font-size: 62.5%;
+     font-size: 80%;
 }
 
 body {
@@ -17,6 +17,10 @@ body {
      align-items: center;
      justify-content: center;
      min-height: 100vh;
+}
+
+#guesses {
+    margin-bottom: 20px;
 }
 
  .button {
@@ -32,8 +36,41 @@ body {
      transition: background .3s ease, color .3s ease;
 }
 
+ span {
+     border-bottom: 3px solid navy;
+     display: inline-block;
+     font-size: 2rem;
+     height: 4rem;
+     line-height: 4rem;
+     margin: 0 .1rem;
+     text-align: center;
+     text-transform: uppercase;
+     width: 4rem;
+}
+
+ p {
+     font-weight: 300;
+     margin-bottom: 1rem;
+}
+
+ .puzzle {
+     display: flex;
+     margin-bottom: 5rem;
+}
+
  .button:hover {
      background: navy;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    position: absolute;
+    top: 17%;
 }
 
  

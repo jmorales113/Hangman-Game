@@ -6,7 +6,7 @@ class Hangman {
         this.status = "playing"
     }
     calculateStatus() {
-        let puzzleChar = game1.puzzle
+        let puzzleChar = game.puzzle
         if (this.remainingGuesses === 0) {
             this.status = "failed"
         } else if (!puzzleChar.includes("*") && this.remainingGuesses > 0 || this.remainingGuesses <= 0) {
