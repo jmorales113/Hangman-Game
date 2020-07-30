@@ -6,7 +6,7 @@
 
 Hangman game built with Object-Oriented Programming and DOM manipulation.
 
-## Usage
+## Features
 
 Try to guess the two-letter word within 5 guesses! Simply type the letters you want to guess with your keyboard. Click on the button to start a new game which will generate a new two-letter word!
 
