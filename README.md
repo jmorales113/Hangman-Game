@@ -16,6 +16,8 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 
 ## Deployed Application
 
+https://jmorales113.github.io/Hangman-Game/
+
 ![hangman](https://user-images.githubusercontent.com/57970306/88874410-e21bd180-d1d3-11ea-8b24-ce123d8e46fc.PNG)
 ![hangman-win](https://user-images.githubusercontent.com/57970306/88874274-894c3900-d1d3-11ea-841b-f989693859f9.PNG)
 ![hangman-lose](https://user-images.githubusercontent.com/57970306/88874282-8c472980-d1d3-11ea-962e-a8f394578d3b.PNG)
