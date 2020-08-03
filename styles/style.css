@@ -24,7 +24,7 @@ body {
 }
 
  .button {
-     background: blue;
+     background: navy;
      border: 1px solid; 
      border-radius: 10px;
      cursor: pointer;
@@ -59,7 +59,7 @@ body {
 }
 
  .button:hover {
-     background: navy;
+     background: blue;
 }
 
 .title {
