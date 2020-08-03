@@ -6,7 +6,7 @@
 
 Hangman game built with Object-Oriented Programming and DOM manipulation.
 
-## Usage
+## Features
 
 Try to guess the two-letter word within 5 guesses! Simply type the letters you want to guess with your keyboard. Click on the button to start a new game which will generate a new two-letter word!
 
@@ -16,7 +16,7 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 
 ## Deployed Application
 
-https://jmorales113.github.io/Hangman-Game/
+https://affectionate-haibt-f1d86a.netlify.app/
 
 ![hangman](https://user-images.githubusercontent.com/57970306/88874410-e21bd180-d1d3-11ea-8b24-ce123d8e46fc.PNG)
 ![hangman-win](https://user-images.githubusercontent.com/57970306/88874274-894c3900-d1d3-11ea-841b-f989693859f9.PNG)
@@ -24,6 +24,8 @@ https://jmorales113.github.io/Hangman-Game/
 
 
 ## Contributor
+
+-  [Jorge Morales](https://github.com/jmorales113)
 
 ## Questions
 
