@@ -1,3 +1,6 @@
+import Hangman from "./hangman.js"
+import getPuzzle from "./request.js"
+
 const puzzleEl = document.querySelector("#puzzle")
 const guessesEl = document.querySelector("#guesses")
 let game
@@ -30,6 +33,3 @@ document.querySelector("#reset").addEventListener("click", () => {
 })
 
 startGame()
-
-
-
