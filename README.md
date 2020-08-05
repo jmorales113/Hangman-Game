@@ -16,7 +16,7 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 
 ## Run
 
-    npm run dev-server
+    npm run dev-server; app will run locally on http://localhost:8080/
 
 ## Deployed Application
 
