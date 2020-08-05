@@ -17,6 +17,26 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 ## Run
 
     npm run dev-server; app will run locally on http://localhost:8080/
+    
+ ## Technologies Used
+ 
+ - HTML
+ - CSS
+ - JavaScript
+ - Babel
+ - Webpack
+ 
+ ## Dependencies
+ 
+ - babel-cli
+ - babel-loader
+ - babel-preset-env
+ - core-js
+ - live-server
+ - regenerator-runtime
+ - webpack-cli
+ - webpack-dev-server
+ 
 
 ## Deployed Application
 
