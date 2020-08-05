@@ -12,7 +12,11 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 
 ## Installation
 
-    none
+    npm install
+
+## Run
+
+    npm run dev-server
 
 ## Deployed Application
 
