@@ -1,3 +1,5 @@
+import { game } from "./index"
+
 class Hangman {
     constructor(word, remainingGuesses) {
         this.word = word.toLowerCase().split("")

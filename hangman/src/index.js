@@ -3,7 +3,7 @@ import getPuzzle from "./request.js"
 
 const puzzleEl = document.querySelector("#puzzle")
 const guessesEl = document.querySelector("#guesses")
-let game
+let game; 
 
 window.addEventListener("keypress", (e) => {
     const guess = String.fromCharCode(e.charCode)
@@ -33,3 +33,5 @@ document.querySelector("#reset").addEventListener("click", () => {
 })
 
 startGame()
+
+export { game }
