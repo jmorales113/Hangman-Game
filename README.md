@@ -12,11 +12,15 @@ Try to guess the two-letter word within 5 guesses! Simply type the letters you w
 
 ## Installation
 
-    none
+    npm install
+
+## Run
+
+    npm run dev-server; app will run locally on http://localhost:8080/
 
 ## Deployed Application
 
-https://jmorales-hangman-game.netlify.app/
+https://jmorales-hangman.netlify.app/
 
 ![hangman](https://user-images.githubusercontent.com/57970306/88874410-e21bd180-d1d3-11ea-8b24-ce123d8e46fc.PNG)
 ![hangman-win](https://user-images.githubusercontent.com/57970306/88874274-894c3900-d1d3-11ea-841b-f989693859f9.PNG)
